@@ -40,25 +40,18 @@ class IdcBuild extends StatelessWidget {
     var size = MediaQuery.of(context).size;
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text("OM Chat"),
+        centerTitle: true,
+        leading: Icon(Icons.sports),
+      ),
       body: Container(
         height: size.height,
         width: size.width,
         color: Colors.black,
-        child: Center(
-          child: Card(
-            child: Stack(
-              alignment: Alignment.topCenter,
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(top: 10),
-                  child: CircleAvatar(
-                    backgroundColor: Colors.blue,
-                    radius: 40,
-                  ),
-                ),
-                Image.asset("images/img4.jpg"),
-              ],
-            ),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [Stack()],
           ),
         ),
       ),
