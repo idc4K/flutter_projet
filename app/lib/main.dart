@@ -66,13 +66,24 @@ class IdcBuild extends StatelessWidget {
               ],
             ),
             Padding(
+              padding: EdgeInsets.only(top: 10),
+              child: Text(
+                "Dimitri Payet",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20),
+              ),
+            ),
+            Padding(
                 padding: EdgeInsets.only(top: 10),
                 child: Text(
-                  "Dimitri Payet",
+                  "Le meneur et le maitre  à jouer de l'olympique de Marseille",
                   style: TextStyle(
                       color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20),
+                      fontSize: 18,
+                      fontStyle: FontStyle.italic),
+                  textAlign: TextAlign.center,
                 ))
           ],
         )),
