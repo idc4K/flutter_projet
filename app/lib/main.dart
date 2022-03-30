@@ -55,8 +55,14 @@ class IdcBuild extends StatelessWidget {
             Stack(
               alignment: Alignment.topCenter,
               children: [
-                Image.asset("images/img4.jpg"),
-                CircleAvatar(radius: 40)
+                Image.asset("images/img4.jpg", height: 300, width: size.width),
+                Padding(
+                  padding: EdgeInsets.only(top: 220),
+                  child: CircleAvatar(
+                    radius: 60,
+                    backgroundImage: AssetImage("images/img3.jpg"),
+                  ),
+                )
               ],
             )
           ],
