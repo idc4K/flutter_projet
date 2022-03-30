@@ -50,10 +50,17 @@ class IdcBuild extends StatelessWidget {
         width: size.width,
         color: Colors.black,
         child: SingleChildScrollView(
-          child: Column(
-            children: [Stack()],
-          ),
-        ),
+            child: Column(
+          children: [
+            Stack(
+              alignment: Alignment.topCenter,
+              children: [
+                Image.asset("images/img4.jpg"),
+                CircleAvatar(radius: 40)
+              ],
+            )
+          ],
+        )),
       ),
     );
   }
