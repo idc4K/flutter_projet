@@ -84,7 +84,10 @@ class IdcBuild extends StatelessWidget {
                       fontSize: 18,
                       fontStyle: FontStyle.italic),
                   textAlign: TextAlign.center,
-                ))
+                )),
+            Row(
+              children: [],
+            )
           ],
         )),
       ),
