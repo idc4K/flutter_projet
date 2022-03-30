@@ -59,15 +59,22 @@ class IdcBuild extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(top: 220),
                   child: CircleAvatar(
-                    radius: 60,
-                    backgroundImage: AssetImage("images/img3.jpg"),
-                  ),
+                      radius: 60,
+                      backgroundColor: Colors.white,
+                      child: mypic(57)),
                 )
               ],
             )
           ],
         )),
       ),
+    );
+  }
+
+  CircleAvatar mypic(double radius) {
+    return CircleAvatar(
+      radius: radius,
+      backgroundImage: AssetImage("images/img3.jpg"),
     );
   }
 }
