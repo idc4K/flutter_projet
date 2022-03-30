@@ -21,11 +21,13 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.blue,
+
         // This makes the visual density adapt to the platform that you run
         // the app on. For desktop platforms, the controls will be smaller and
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      debugShowCheckedModeBanner: false,
       home: IdcBuild(),
     );
   }
@@ -43,7 +45,21 @@ class IdcBuild extends StatelessWidget {
         width: size.width,
         color: Colors.black,
         child: Center(
-          child: Card(),
+          child: Card(
+            child: Stack(
+              alignment: Alignment.topCenter,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 10),
+                  child: CircleAvatar(
+                    backgroundColor: Colors.blue,
+                    radius: 40,
+                  ),
+                ),
+                Image.asset("images/img4.jpg"),
+              ],
+            ),
+          ),
         ),
       ),
     );
