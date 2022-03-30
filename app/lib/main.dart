@@ -64,7 +64,16 @@ class IdcBuild extends StatelessWidget {
                       child: mypic(57)),
                 )
               ],
-            )
+            ),
+            Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: Text(
+                  "Dimitri Payet",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20),
+                ))
           ],
         )),
       ),
