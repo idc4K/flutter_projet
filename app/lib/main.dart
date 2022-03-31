@@ -86,7 +86,12 @@ class IdcBuild extends StatelessWidget {
                   textAlign: TextAlign.center,
                 )),
             Row(
-              children: [ButtonCont(text: "Modifier votre profile")],
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(top: 20, right: 8),
+                  child: ButtonCont(text: "Modifier votre profile"),
+                ),
+              ],
             )
           ],
         )),
