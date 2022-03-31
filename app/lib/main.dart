@@ -86,7 +86,7 @@ class IdcBuild extends StatelessWidget {
                   textAlign: TextAlign.center,
                 )),
             Row(
-              children: [],
+              children: [ButtonCont(text: "Modifier votre profile")],
             )
           ],
         )),
@@ -98,6 +98,23 @@ class IdcBuild extends StatelessWidget {
     return CircleAvatar(
       radius: radius,
       backgroundImage: AssetImage("images/img3.jpg"),
+    );
+  }
+
+  Container ButtonCont({IconData icon, String text}) {
+    return Container(
+      margin: EdgeInsets.only(left: 10, right: 10),
+      padding: EdgeInsets.all(15),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Colors.blue,
+      ),
+      child: (icon == null)
+          ? Text(
+              text ?? "",
+              style: TextStyle(color: Colors.white),
+            )
+          : Icon(icon, color: Colors.white),
     );
   }
 }
