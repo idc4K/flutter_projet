@@ -103,13 +103,13 @@ class IdcBuild extends StatelessWidget {
             ),
             Row(
               children: [
-                Text(
-                  "A Propos de Moi",
-                  style: TextStyle(color: Colors.white),
-                ),
                 Icon(
                   Icons.sports,
                   color: Colors.white,
+                ),
+                Text(
+                  "A Propos de Moi",
+                  style: TextStyle(color: Colors.white),
                 ),
               ],
             )
