@@ -89,7 +89,7 @@ class IdcBuild extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(top: 20, left: 60),
-                  child: ButtonCont(text: "Modifier votre profile"),
+                  child: ButtonCont(text: "Modifier votre profile", width: 200),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 20, left: 20),
@@ -97,22 +97,29 @@ class IdcBuild extends StatelessWidget {
                 ),
               ],
             ),
-            Text(
-              "A Propos de Moi",
-              style: TextStyle(color: Colors.white),
-            ),
-            Row(
-              children: [
-                Icon(
-                  Icons.sports,
-                  color: Colors.white,
-                ),
-                Text(
+            Padding(
+                padding: EdgeInsets.only(right: 298, top: 10),
+                child: Text(
                   "A Propos de Moi",
                   style: TextStyle(color: Colors.white),
-                ),
-              ],
-            )
+                )),
+
+            // A Propos De Moi
+
+            Padding(
+              padding: EdgeInsets.only(top: 8),
+              child: Apropos(icon: Icons.house, text: "Rabat Sale, Maroc"),
+            ),
+
+            Padding(
+              padding: EdgeInsets.only(top: 8),
+              child: Apropos(icon: Icons.work, text: "Developper"),
+            ),
+
+            Padding(
+              padding: EdgeInsets.only(top: 8),
+              child: Apropos(icon: Icons.favorite, text: "En couple"),
+            ),
           ],
         )),
       ),
@@ -126,9 +133,10 @@ class IdcBuild extends StatelessWidget {
     );
   }
 
-  Container ButtonCont({IconData icon, String text}) {
+  Container ButtonCont({IconData icon, String text, double width}) {
     return Container(
       margin: EdgeInsets.only(left: 10, right: 10),
+      width: width,
       padding: EdgeInsets.all(15),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
@@ -140,6 +148,21 @@ class IdcBuild extends StatelessWidget {
               style: TextStyle(color: Colors.white),
             )
           : Icon(icon, color: Colors.white),
+    );
+  }
+
+  Widget Apropos({IconData icon, String text}) {
+    return Row(
+      children: [
+        Icon(
+          icon,
+          color: Colors.white,
+        ),
+        Text(
+          text,
+          style: TextStyle(color: Colors.white),
+        ),
+      ],
     );
   }
 }
