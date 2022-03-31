@@ -143,10 +143,11 @@ class IdcBuild extends StatelessWidget {
         color: Colors.blue,
       ),
       child: (icon == null)
-          ? Text(
+          ? Center(
+              child: Text(
               text ?? "",
               style: TextStyle(color: Colors.white),
-            )
+            ))
           : Icon(icon, color: Colors.white),
     );
   }
