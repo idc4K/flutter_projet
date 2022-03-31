@@ -96,6 +96,22 @@ class IdcBuild extends StatelessWidget {
                   child: ButtonCont(icon: Icons.sports),
                 ),
               ],
+            ),
+            Text(
+              "A Propos de Moi",
+              style: TextStyle(color: Colors.white),
+            ),
+            Row(
+              children: [
+                Text(
+                  "A Propos de Moi",
+                  style: TextStyle(color: Colors.white),
+                ),
+                Icon(
+                  Icons.sports,
+                  color: Colors.white,
+                ),
+              ],
             )
           ],
         )),
