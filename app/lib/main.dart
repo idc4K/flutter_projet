@@ -88,8 +88,12 @@ class IdcBuild extends StatelessWidget {
             Row(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(top: 20, right: 8),
+                  padding: EdgeInsets.only(top: 20, left: 60),
                   child: ButtonCont(text: "Modifier votre profile"),
+                ),
+                Padding(
+                  padding: EdgeInsets.only(top: 20, left: 20),
+                  child: ButtonCont(icon: Icons.sports),
                 ),
               ],
             )
