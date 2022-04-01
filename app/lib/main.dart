@@ -103,7 +103,7 @@ class IdcBuild extends StatelessWidget {
                   "A Propos de Moi",
                   style: TextStyle(color: Colors.white),
                 )),
-
+            Divider(),
             // A Propos De Moi
 
             Padding(
