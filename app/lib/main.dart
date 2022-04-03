@@ -98,7 +98,7 @@ class IdcBuild extends StatelessWidget {
               ],
             ),
             Padding(
-                padding: EdgeInsets.only(right: 298, top: 10),
+                padding: EdgeInsets.only(right: 298, top: 12),
                 child: Text(
                   "A Propos de Moi",
                   style: TextStyle(color: Colors.white),
@@ -107,7 +107,7 @@ class IdcBuild extends StatelessWidget {
             // A Propos De Moi
 
             Padding(
-              padding: EdgeInsets.only(top: 8),
+              padding: EdgeInsets.only(top: 2),
               child: Apropos(icon: Icons.house, text: "Rabat Sale, Maroc"),
             ),
 
