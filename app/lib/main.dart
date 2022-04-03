@@ -233,7 +233,7 @@ class IdcBuild extends StatelessWidget {
         child: Column(
           children: [
             Row(children: [
-              mypic(20, "images/img8.jpg"),
+              mypic(30, "images/img8.jpg"),
               Padding(
                 padding: EdgeInsets.only(left: 8),
               ),
@@ -246,7 +246,7 @@ class IdcBuild extends StatelessWidget {
 
   Padding temps(String time) {
     return Padding(
-        padding: EdgeInsets.only(left: 150),
+        padding: EdgeInsets.only(left: 136),
         child: Text(
           "il y a $time",
         ));
