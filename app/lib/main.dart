@@ -137,10 +137,6 @@ class IdcBuild extends StatelessWidget {
                 padding: EdgeInsets.only(top: 10, left: 5),
                 child: imageAmis("B.Dieng", "images/img8.jpg", width / 3),
               ),
-              Text(
-                "B.Dieng",
-                style: TextStyle(color: Colors.white),
-              )
             ])
           ],
         )),
@@ -199,7 +195,7 @@ class IdcBuild extends StatelessWidget {
             image: DecorationImage(image: AssetImage(imagePath)),
           ),
         ),
-        Text(name),
+        Text(name, style: TextStyle(color: Colors.white)),
       ],
     );
   }
