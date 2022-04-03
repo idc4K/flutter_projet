@@ -147,7 +147,11 @@ class IdcBuild extends StatelessWidget {
                 child: imageAmis(
                     "A.P.Gignac", "images/img10.jpg", width / 3.2, 30),
               ),
-            ])
+            ]),
+            Divider(
+              thickness: 1,
+              color: Colors.grey,
+            )
           ],
         )),
       ),
@@ -209,6 +213,9 @@ class IdcBuild extends StatelessWidget {
           ),
         ),
         Text(name, style: TextStyle(color: Colors.white)),
+        Padding(
+          padding: EdgeInsets.only(bottom: 5),
+        )
       ],
     );
   }
