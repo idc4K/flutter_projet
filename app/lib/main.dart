@@ -38,6 +38,7 @@ class IdcBuild extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     var size = MediaQuery.of(context).size;
+    var width = MediaQuery.of(context).size.width;
 
     return Scaffold(
       appBar: AppBar(
@@ -131,6 +132,7 @@ class IdcBuild extends StatelessWidget {
                   "A Propos de Moi",
                   style: TextStyle(color: Colors.white),
                 )),
+            Row(children: [imageAmis("B.Dieng", "images/img8.jpg", width / 3)])
           ],
         )),
       ),
