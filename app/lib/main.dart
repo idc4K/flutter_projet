@@ -108,7 +108,7 @@ class IdcBuild extends StatelessWidget {
             // A Propos De Moi
 
             Padding(
-              padding: EdgeInsets.only(top: 1),
+              padding: EdgeInsets.only(top: 8),
               child: Apropos(icon: Icons.house, text: "Rabat Sale, Maroc"),
             ),
 
@@ -127,12 +127,21 @@ class IdcBuild extends StatelessWidget {
             ),
             // Amis
             Padding(
-                padding: EdgeInsets.only(right: 298, top: 12),
+                padding: EdgeInsets.only(right: 360, top: 12),
                 child: Text(
-                  "A Propos de Moi",
+                  "Amis",
                   style: TextStyle(color: Colors.white),
                 )),
-            Row(children: [imageAmis("B.Dieng", "images/img8.jpg", width / 3)])
+            Row(children: [
+              Padding(
+                padding: EdgeInsets.only(top: 10, left: 5),
+                child: imageAmis("B.Dieng", "images/img8.jpg", width / 3),
+              ),
+              Text(
+                "B.Dieng",
+                style: TextStyle(color: Colors.white),
+              )
+            ])
           ],
         )),
       ),
