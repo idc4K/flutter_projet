@@ -201,8 +201,11 @@ class IdcBuild extends StatelessWidget {
           width: width,
           height: width,
           decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage(imagePath)),
-              borderRadius: BorderRadius.circular(radius)),
+            image: DecorationImage(image: AssetImage(imagePath)),
+            borderRadius: BorderRadius.circular(radius),
+            // color: Colors.blue,
+            // boxShadow: [BoxShadow(color: Colors.grey)]
+          ),
         ),
         Text(name, style: TextStyle(color: Colors.white)),
       ],
