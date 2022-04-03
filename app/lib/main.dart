@@ -152,7 +152,10 @@ class IdcBuild extends StatelessWidget {
               thickness: 1,
               color: Colors.grey,
             ),
-            post("5 minutes", "img1.jpg", "Allez l'OM", 1, 2)
+            post("5 minutes", "images/img8.jpg", "Allez l'OM", 1, 2,
+                "Bamba Dieng"),
+            post("10 minutes", "images/img10.jpg",
+                "Le Stade Velodrome quelle ambiance", 1, 2, "A.P.Gignac")
           ],
         )),
       ),
@@ -163,6 +166,12 @@ class IdcBuild extends StatelessWidget {
     return CircleAvatar(
       radius: radius,
       backgroundImage: AssetImage(image),
+    );
+  }
+
+  Image Pimg(String image) {
+    return Image.asset(
+      image,
     );
   }
 
@@ -221,10 +230,10 @@ class IdcBuild extends StatelessWidget {
     );
   }
 
-  Container post(
-      String time, String image, String desc, int likes, int comments) {
+  Container post(String time, String img, String desc, int likes, int comments,
+      String text) {
     return Container(
-        margin: EdgeInsets.only(top: 8, left: 3, right: 3),
+        margin: EdgeInsets.only(top: 15, left: 3, right: 3),
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
@@ -237,9 +246,10 @@ class IdcBuild extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 8),
               ),
-              Text("Bamba Dieng"),
+              Text(text),
               temps(time)
-            ])
+            ]),
+            Image.asset(img)
           ],
         ));
   }
