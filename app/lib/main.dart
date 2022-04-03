@@ -219,4 +219,20 @@ class IdcBuild extends StatelessWidget {
       ],
     );
   }
+
+  Container post(
+      {String time,
+      String image,
+      String desc,
+      int likes = 0,
+      int comments = 0}) {
+    return Container(
+      margin: EdgeInsets.only(top: 8, left: 3, right: 3),
+      padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        color: Color.fromRGBO(225, 225, 225, 1),
+      ),
+    );
+  }
 }
