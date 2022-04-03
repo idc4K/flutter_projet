@@ -135,7 +135,16 @@ class IdcBuild extends StatelessWidget {
             Row(children: [
               Padding(
                 padding: EdgeInsets.only(top: 10, left: 5),
-                child: imageAmis("B.Dieng", "images/img8.jpg", width / 3),
+                child: imageAmis("B.Dieng", "images/img8.jpg", width / 3, 30),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 10, left: 5),
+                child: imageAmis("B.Kamara", "images/img9.jpg", width / 3, 20),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 10, left: 5),
+                child:
+                    imageAmis("A.P.Gignac", "images/img10.jpg", width / 3, 30),
               ),
             ])
           ],
@@ -185,15 +194,15 @@ class IdcBuild extends StatelessWidget {
     );
   }
 
-  Column imageAmis(String name, String imagePath, double width) {
+  Column imageAmis(String name, String imagePath, double width, double radius) {
     return Column(
       children: [
         Container(
           width: width,
           height: width,
           decoration: BoxDecoration(
-            image: DecorationImage(image: AssetImage(imagePath)),
-          ),
+              image: DecorationImage(image: AssetImage(imagePath)),
+              borderRadius: BorderRadius.circular(radius)),
         ),
         Text(name, style: TextStyle(color: Colors.white)),
       ],
