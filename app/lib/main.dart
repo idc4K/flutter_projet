@@ -132,19 +132,20 @@ class IdcBuild extends StatelessWidget {
                   "Amis",
                   style: TextStyle(color: Colors.white),
                 )),
-            Row(children: [
+            Row(mainAxisSize: MainAxisSize.max, children: [
               Padding(
                 padding: EdgeInsets.only(top: 10, left: 5),
-                child: imageAmis("B.Dieng", "images/img8.jpg", width / 3, 30),
-              ),
-              Padding(
-                padding: EdgeInsets.only(top: 10, left: 5),
-                child: imageAmis("B.Kamara", "images/img9.jpg", width / 3, 20),
+                child: imageAmis("B.Dieng", "images/img8.jpg", width / 3.2, 30),
               ),
               Padding(
                 padding: EdgeInsets.only(top: 10, left: 5),
                 child:
-                    imageAmis("A.P.Gignac", "images/img10.jpg", width / 3, 30),
+                    imageAmis("B.Kamara", "images/img9.jpg", width / 3.2, 20),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 10, left: 5),
+                child: imageAmis(
+                    "A.P.Gignac", "images/img10.jpg", width / 3.2, 30),
               ),
             ])
           ],
