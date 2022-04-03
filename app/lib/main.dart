@@ -62,7 +62,7 @@ class IdcBuild extends StatelessWidget {
                   child: CircleAvatar(
                       radius: 60,
                       backgroundColor: Colors.white,
-                      child: mypic(57)),
+                      child: mypic(57, "images/img3.jpg")),
                 )
               ],
             ),
@@ -151,17 +151,18 @@ class IdcBuild extends StatelessWidget {
             Divider(
               thickness: 1,
               color: Colors.grey,
-            )
+            ),
+            post("5 minutes", "img1.jpg", "Allez l'OM", 1, 2)
           ],
         )),
       ),
     );
   }
 
-  CircleAvatar mypic(double radius) {
+  CircleAvatar mypic(double radius, String image) {
     return CircleAvatar(
       radius: radius,
-      backgroundImage: AssetImage("images/img3.jpg"),
+      backgroundImage: AssetImage(image),
     );
   }
 
@@ -221,11 +222,7 @@ class IdcBuild extends StatelessWidget {
   }
 
   Container post(
-      {String time,
-      String image,
-      String desc,
-      int likes = 0,
-      int comments = 0}) {
+      String time, String image, String desc, int likes, int comments) {
     return Container(
         margin: EdgeInsets.only(top: 8, left: 3, right: 3),
         padding: EdgeInsets.all(10),
@@ -234,7 +231,24 @@ class IdcBuild extends StatelessWidget {
           color: Color.fromRGBO(225, 225, 225, 1),
         ),
         child: Column(
-          children: [mypic(20)],
+          children: [
+            Row(children: [
+              mypic(20, "images/img8.jpg"),
+              Padding(
+                padding: EdgeInsets.only(left: 8),
+              ),
+              Text("Bamba Dieng"),
+              temps(time)
+            ])
+          ],
+        ));
+  }
+
+  Padding temps(String time) {
+    return Padding(
+        padding: EdgeInsets.only(left: 150),
+        child: Text(
+          "il y a $time",
         ));
   }
 }
