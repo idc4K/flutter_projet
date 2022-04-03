@@ -107,7 +107,7 @@ class IdcBuild extends StatelessWidget {
             // A Propos De Moi
 
             Padding(
-              padding: EdgeInsets.only(top: 2),
+              padding: EdgeInsets.only(top: 1),
               child: Apropos(icon: Icons.house, text: "Rabat Sale, Maroc"),
             ),
 
