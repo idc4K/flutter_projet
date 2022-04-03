@@ -103,7 +103,7 @@ class IdcBuild extends StatelessWidget {
                   "A Propos de Moi",
                   style: TextStyle(color: Colors.white),
                 )),
-            Divider(),
+
             // A Propos De Moi
 
             Padding(
@@ -120,6 +120,17 @@ class IdcBuild extends StatelessWidget {
               padding: EdgeInsets.only(top: 8),
               child: Apropos(icon: Icons.favorite, text: "En couple"),
             ),
+            Divider(
+              thickness: 1,
+              color: Colors.grey,
+            ),
+            // Amis
+            Padding(
+                padding: EdgeInsets.only(right: 298, top: 12),
+                child: Text(
+                  "A Propos de Moi",
+                  style: TextStyle(color: Colors.white),
+                )),
           ],
         )),
       ),
@@ -163,6 +174,21 @@ class IdcBuild extends StatelessWidget {
           text,
           style: TextStyle(color: Colors.white),
         ),
+      ],
+    );
+  }
+
+  Column imageAmis(String name, String imagePath, double width) {
+    return Column(
+      children: [
+        Container(
+          width: width,
+          height: width,
+          decoration: BoxDecoration(
+            image: DecorationImage(image: AssetImage(imagePath)),
+          ),
+        ),
+        Text(name),
       ],
     );
   }
