@@ -227,12 +227,14 @@ class IdcBuild extends StatelessWidget {
       int likes = 0,
       int comments = 0}) {
     return Container(
-      margin: EdgeInsets.only(top: 8, left: 3, right: 3),
-      padding: EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        color: Color.fromRGBO(225, 225, 225, 1),
-      ),
-    );
+        margin: EdgeInsets.only(top: 8, left: 3, right: 3),
+        padding: EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(20),
+          color: Color.fromRGBO(225, 225, 225, 1),
+        ),
+        child: Column(
+          children: [mypic(20)],
+        ));
   }
 }
