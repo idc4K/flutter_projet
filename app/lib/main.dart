@@ -153,9 +153,15 @@ class IdcBuild extends StatelessWidget {
               color: Colors.grey,
             ),
             post("5 minutes", "images/img8.jpg", "Allez l'OM", 1, 2,
-                "Bamba Dieng"),
-            post("10 minutes", "images/img10.jpg",
-                "Le Stade Velodrome quelle ambiance", 1, 2, "A.P.Gignac")
+                "Bamba Dieng", "images/img8.jpg"),
+            post(
+                "10 minutes",
+                "images/img4.jpg",
+                "Le Stade Velodrome quelle ambiance",
+                1,
+                2,
+                "A.P.Gignac",
+                "images/img10.jpg")
           ],
         )),
       ),
@@ -231,7 +237,7 @@ class IdcBuild extends StatelessWidget {
   }
 
   Container post(String time, String img, String desc, int likes, int comments,
-      String text) {
+      String text, String pics) {
     return Container(
         margin: EdgeInsets.only(top: 15, left: 3, right: 3),
         padding: EdgeInsets.all(10),
@@ -242,7 +248,7 @@ class IdcBuild extends StatelessWidget {
         child: Column(
           children: [
             Row(children: [
-              mypic(30, "images/img8.jpg"),
+              mypic(30, pics),
               Padding(
                 padding: EdgeInsets.only(left: 8),
               ),
